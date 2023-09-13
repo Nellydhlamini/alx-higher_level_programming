@@ -5,7 +5,7 @@ def complex_delete(a_dictionary, value):
         if y == value:
             keys.append(x)
 
-        for x in keys:
-            del a_dictionary[x]
+    for x in keys:
+        del a_dictionary[x]
 
-        return a_dictionary
+    return a_dictionary
