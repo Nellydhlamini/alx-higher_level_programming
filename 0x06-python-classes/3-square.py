@@ -2,6 +2,8 @@
 """
 A Square class.
 """
+
+
 class Square:
     """
     Private instance attribute: size
