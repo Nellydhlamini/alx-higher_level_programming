@@ -1,24 +1,24 @@
-===============================
-1. Print sorted module
-===============================
+***********************
+1. Print a sorted module
+***********************
 
 Import module:
-==============
+
     >>> MyList = __import__('1-my_list').MyList
 
 
 Function:
-=========
-Write a class MyList that inherits from list:
+
+Has a  class MyList that inherits from list:
 
     * You are not allowed to import any module
     * Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
     * You can assume that all the elements of the list will be of type int
 
-Section // No exceptions
-=========================
+Section // No exceptions:
+*************************
 
-Test case #0: A test case to order a disordered list of positive integers
+Test case #0: Sorts a list of positive integers in ascending order
 
     >>> my_list = MyList()
     >>> my_list.append(1)
@@ -35,7 +35,7 @@ Test case #0: A test case to order a disordered list of positive integers
     >>> print(my_list)
     [1, 4, 2, 3, 5]
 
-Test case #1: A test case to order a disordered list of positive integers
+Test case #1: Sorts a disordered list of positive integers in ascending order.
 
     >>> my_list = MyList()
     >>> my_list.append(5)
@@ -52,7 +52,7 @@ Test case #1: A test case to order a disordered list of positive integers
     >>> print(my_list)
     [5, 4, 3, 2, 1]
 
-Test case #2: A test case for a empty list
+Test case #2: For an empty list
 
     >>> my_list = MyList()
     >>> print(my_list)
@@ -64,7 +64,7 @@ Test case #2: A test case for a empty list
     >>> print(my_list)
     []
 
-Test case #3: A test case for do nothing
+Test case #3: For do nothing
 
     >>> my_list = MyList()
     >>> my_list.append(-5)
@@ -81,7 +81,7 @@ Test case #3: A test case for do nothing
     >>> print(my_list)
     [-5, -4, -3, -2, -1]
 
-Test case #4: A test case to order a disordered list of negative integers
+Test case #4: Sorts a list of negative integers in ascending order
 
     >>> my_list = MyList()
     >>> my_list.append(-1)
@@ -100,9 +100,9 @@ Test case #4: A test case to order a disordered list of negative integers
 
 
 Section // Attribute Errors
-============================
+****************************
 
-Test case #5: A invalid test case of tuples
+Test case #5: An invalid test case of tuples
 
     >>> my_list = (1, 2)
     >>> print(my_list)
